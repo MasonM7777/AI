@@ -1,0 +1,147 @@
+
+/* CSS Reset */
+body, header, nav, main, footer, h2, h6, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background:linear-gradient(to right, #a0a0a0, #404040);
+}
+
+main {
+    background-color: #404040;
+    padding: 2%;
+    font-size: 1.35em;
+}
+
+h1 {
+    text-shadow: 2px 2px #8a0a0a;
+}
+
+.external-link:hover {
+    color: rgba(111, 127, 255, 1);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.aside{
+    max-width: 50%;
+    display: block;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 190px;
+} 
+
+@media screen and (max-width: 480px) {
+    .mobile {
+        margin: 1%;
+    }
+}
+
+header img {
+    margin: 0 auto;
+}
+
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+ }
+ 
+ nav ul {
+     list-style-type: none;
+     text-align: center;
+     font-family: "Agdasima", sans-serif;
+ }
+ 
+ nav li {
+     font-size: 1.5em;
+      /*font-family: 'Francois One', sans-serif;*/
+     border-top: 1px solid #000;
+ }
+ 
+ nav li:first-child {
+     border-top: none;
+ }
+ 
+ nav li a {
+     display: block;
+     color:  #fff;
+     padding: 0.5em  1em;
+     text-decoration: none;
+ }
+
+#hero {               /* something is wrong here */
+    max-width: 100%;
+    position: center;
+}
+
+.mobile {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
+/* Media Query for desktop */
+@media screen and (min-width: 630px) {
+    
+    /* Tablet Viewport: Show desktop class, hide mobile class */
+    .desktop {
+        display: block;
+    }
+
+    .mobile{
+        display: none;
+    }
+    
+    header {
+        position: static;
+        top: 0;
+        background-color: #000;
+        height: 190px;
+    }
+}
+
+.external-link {
+    font-size: 2em;
+    color: #728100;
+}
+
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.round {
+    border-radius: 8px;
+    box-shadow: 5px -10px;
+}
+
+#AIuse, #AIimages {
+    margin: 0 2%;
+    font-family: "Roboto Serif", serif;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
